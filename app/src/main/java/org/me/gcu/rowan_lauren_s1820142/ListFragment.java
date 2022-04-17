@@ -89,9 +89,9 @@ public class ListFragment extends Fragment implements AdapterView.OnItemSelected
             public void onClick(View v) {
                 DatePickerDialog datePickerDialog = new DatePickerDialog(getContext(), new DatePickerDialog.OnDateSetListener() {
                     @Override
-                    public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-                        month = month+ 1;
-                        String date = day+"/"+month+"/"+year;
+                    public void onDateSet(DatePicker view, int selectedYear, int selectedMonth, int dayOfMonth) {
+                        selectedMonth = selectedMonth+ 1;
+                        String date = dayOfMonth+"/"+selectedMonth+"/"+selectedYear;
                         txtSearchDate.setText(date);
 
                         populateList();
