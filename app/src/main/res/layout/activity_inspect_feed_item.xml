@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Lauren Rowan S1820142 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InspectFeedItem"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/titleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title:"
+        android:textStyle="bold">
+    </TextView>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleLabel"
+        android:layout_marginBottom="15dp"
+        android:text="Title sample text"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/descriptionLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:text="Description:"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionLabel"
+        android:layout_marginBottom="15dp"
+        android:text="Description sample text"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/startDateLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:text="Start Date:"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/startDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startDateLabel"
+        android:layout_marginBottom="15dp"
+        android:text="00/00/0000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/endDateLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startDate"
+        android:text="End Date:"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/endDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/endDateLabel"
+        android:layout_marginBottom="15dp"
+        android:text="00/00/0000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/latLngLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/endDate"
+        android:text="Latitude / Longitude:"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/latLng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/latLngLabel"
+        android:layout_marginBottom="15dp"
+        android:text="0.000 / 0.000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/pubDateLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/latLng"
+        android:text="Published on:"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/pubDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pubDateLabel"
+        android:layout_marginBottom="15dp"
+        android:text="00/00/0000"
+        android:textSize="20dp"/>
+
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="GO BACK" />
+
+
+</RelativeLayout>

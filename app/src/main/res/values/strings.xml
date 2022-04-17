@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Rowan_Lauren_S1820142</string>
+    <string-array name="item_types">
+        <item>Select an option</item>
+        <item>Current Roadworks</item>
+        <item>Planned Roadworks</item>
+        <item>Current Incidents</item>
+    </string-array>
+</resources>

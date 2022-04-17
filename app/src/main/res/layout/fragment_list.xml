@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Lauren Rowan S1820142 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListFragment"
+    android:paddingTop="15dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/txtSearchName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:lines="1"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:hint="Search by Name" />
+
+        <EditText
+            android:id="@+id/txtSearchDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:lines="1"
+            android:singleLine="true"
+            android:layout_below="@id/txtSearchName"
+            android:focusable="false"
+            android:hint="Search by Date"/>
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_below="@id/txtSearchDate"
+            android:text="Clear fields" />
+
+
+        <Spinner
+            android:id="@+id/listTypeSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/clearButton" />
+
+        <!-- TODO: Update blank fragment layout -->
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>
